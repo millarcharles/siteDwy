@@ -14,7 +14,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
-<link rel="stylesheet" type="text/css" href="../css/stydev.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Proximas Salidas</title>
   </head>
   <body>
@@ -141,8 +141,8 @@
 
 
 
-<div id="formcontainer" class="container-fluid">
-    <div class="display-1 text-center">Reserva tu lugar</div>
+<div id="formcontainer" class="container-fluid mx-5 ">
+    <div class="display-1 text-center">Reserva </div>
 
 <br>
 <br>
@@ -152,7 +152,7 @@
 
 
     <div class="form-row">
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-6 col-xs-12">
             <div class="input-group">
     <select id="cmb_evento" class="custom-select" required  onchange="itemSelected()">
       <option disabled selected value>-- Selecciona un Evento... ---</option>
@@ -175,18 +175,18 @@
 
 
     <div class="form-row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-5 col-xs-6  mb-3">
           <div class="input-group">
        <div class="input-group-prepend">
         <span class="input-group-text" id="telValidado">Fecha</span>
 
       </div>
       <input 
-      id="txtFecha"type="text" class="col-md-5 form-control " aria-describedby="validatedInputGroupPrepend" placeholder="DD/MM" required readonly>
+      id="txtFecha"type="text" class="col-md-5 col-xs-6 form-control " aria-describedby="validatedInputGroupPrepend" placeholder="DD/MM" required readonly>
 
     </div><small class="mb-3 col-md-6"></small></div>
 
-  <div class="mb-3 col-md-3">
+  <div class="mb-3 col-sm-4 col-md-3 col-xs-6">
     <div class="input-group ">
       <div class="input-group-prepend">
         <span class="input-group-text" id="validatedInputGroupPrepend">Horario</span>
@@ -202,7 +202,7 @@
 
 
   <div class="form-row">
-    <div class="col-md-6 mb-3">
+    <div class="col-md-3 col-sm-6 mb-3 col-xs-12">
       <label for="validationCustom01">Nombre</label>
       <input type="text" class="form-control" id="validationCustom01"  required>
       <div class="valid-feedback">
@@ -213,7 +213,7 @@
       </div>
     </div>
 
-     <div class="col-md-6 mb-3">
+     <div class="col-md-3 col-sm-5 mb-3 col-xs-12">
       <label for="validationCustom02">Apellido</label>
       <input type="text" class="form-control" id="validationCustom02"  required>
       <div class="valid-feedback">
@@ -227,7 +227,7 @@
 </div>
 <div class="form-row">
        
-    <div class="col-md-6 mb-3">
+    <div class="col-md-4 col-sm-5 mb-3 col-xs-12">
       <label for="validationCustom01">Direccion</label>
       <input type="text" class="form-control" id="validationCustom01"  required>
       <div class="valid-feedback">
@@ -238,7 +238,7 @@
       </div>
     </div>
    
-    <div class="col-md-5 mb-3">
+    <div class="col-md-2col-sm-3 mb-3 col-xs-12">
       <label for="validationCustom01">Comuna</label>
       <input type="text" class="form-control" id="validationCustom01" required>
       <div class="valid-feedback">
@@ -253,7 +253,7 @@
 
 <div class="form-row">
 
- <div class="col-md-4 mb-3">
+ <div class="col-md-3 col-sm-4 mb-3 col-xs-12">
       <label for="validationServerUsername">Telefono</label>
       <div class="input-group">
         <div class="input-group-prepend">
