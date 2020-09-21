@@ -8,9 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">  
 
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Hello, world!</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+<link rel="stylesheet" type="text/css" href="../css/stydev.css">
+    <title>Proximas Salidas</title>
   </head>
   <body>
     
@@ -32,11 +37,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link " href="./index.html">Inicio <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="./destinos.html">Destinos</a>
       <a class="nav-item nav-link active" href="./salidas.html">Proximas Salidas</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
-    </div>
+      </div>
   </div>
 </nav>
 
@@ -44,88 +48,302 @@
 
 <br>
 <br>
-<h2>Proximas Salidas</h2>
+<h1 class="display-1 text-center">Proximas Salidas</h2>
 <br>
 <br>
 
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">  
-  
+
   <div class="container">
     <div class="row row-striped">
       <div class="col-2 text-right">
-        <h1 class="display-4"><span class="badge badge-secondary">23</span></h1>
-        <h2>OCT</h2>
+        <h1 class="display-4"><span class="badge badge-secondary">20</span></h1>
+        <h2>SEP</h2>
       </div>
       <div class="col-10">
-        <h3 class="text-uppercase"><strong>Ice Cream Social</strong></h3>
+        <h3 class="text-uppercase"><strong>Centro SKI Corralco</strong></h3>
         <ul class="list-inline">
-            <li class="list-inline-item"><img src="../img/Snow.png" style="height: 20px; background-color:#9EE9E6;"></li>
-            <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Monday</li>
-          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
-          <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Cafe</li>
+            <li class="list-inline-item"><img src="../img/Snow.png" style="height: 20px; background-color:#9EE9E6;"></li>SKI
+            <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Domingo</li>
+          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 08:30 PM - 7:00 PM</li>
+          <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Reserva Nacional Malalcahuello</li>
         </ul>
-        <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button type="submit" class="btn btn-"> Reserva tu lugar</button><span>  <b>(2/12) Cupos disponibles</b></span>
+        <p>Visita a centro de ski corralco, ubicado en la reserva nacional malalcahuello. Centro habilitado para la practicas de diciplinas de SKI y Snowboard</p>
+
+
+        <button type="submit" class="btn btn-secondary btn-lg" onclick="testAPI(1);"> Reserva tu lugar</button><span>  <b>(2/12) Cupos disponibles</b></span>
       </div>
     </div>
     <div class="row row-striped">
       <div class="col-2 text-right">
-        <h1 class="display-4"><span class="badge badge-secondary">27</span></h1>
-        <h2>OCT</h2>
+        <h1 class="display-4"><span class="badge badge-secondary">25</span></h1>
+        <h2>SEP</h2>
       </div>
       <div class="col-10">
-        <h3 class="text-uppercase"><strong>Operations Meeting</strong></h3>
+        <h3 class="text-uppercase"><strong>Parque Nacional Villarrica</strong></h3>
         <ul class="list-inline">
-          <li class="list-inline-item"><img src="../img/Hiker.png" style="height: 20px; background-color:#9A5E21;"></li>
-            <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
-          <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+          <li class="list-inline-item"><img src="../img/Hiker.png" style="height: 20px; background-color:#9A5E21;"></li> Trekking
+            <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Viernes</li>
+          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 10:30 PM - 6:40 PM</li>
+          <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Villarrica</li>
         </ul>
-        <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button type="submit" class="btn md-end mt-auto"> Reserva tu lugar</button><span>  <b>(2/12) Cupos disponibles</b></span>
+        <p>Trekking al circuito xx del parque nacional villarrica, dificultad media - alta con una duracion aproximada de 5 horas de caminata.</p>
+        <button type="button" class="btn btn-secondary md-end mt-auto btn btn-lg" href="#formulario-res" onclick="testAPI(2)"> Reserva tu lugar</button><span>  <b>(3/12) Cupos disponibles</b></span>
       </div>
     </div>
     <div class="row row-striped">
       <div class="col-2 text-right">
-        <h1 class="display-4"><span class="badge badge-secondary">27</span></h1>
-        <h2>OCT</h2>
+        <h1 class="display-4"><span class="badge badge-secondary">28</span></h1>
+        <h2>SEP</h2>
       </div>
       <div class="col-10">
-        <h3 class="text-uppercase"><strong>Operations Meeting</strong></h3>
+        <h3 class="text-uppercase"><strong>Bike Park Lastarria</strong></h3>
         <ul class="list-inline">
-          <img src="../img/mtb.png" style="height: 20px; background-color:#E4461F;">
-            <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
-          <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+          <img src="../img/mtb.png" style="height: 20px; background-color:#E4461F;">MTB 
+            <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Lunes</li>
+          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 10:30 AM - 6:00 PM</li>
+          <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Loncoche</li>
         </ul>
         <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <button type="submit" class="btn btn-secondary btn-lg" onclick="testAPI(3);"> Reserva tu lugar</button><span>  <b>(6/12) Cupos disponibles</b></span>
       </div>
     </div>
     <div class="row row-striped">
       <div class="col-2 text-right">
-        <h1 class="display-4"><span class="badge badge-secondary">27</span></h1>
-        <h2>OCT</h2>
+        <h1 class="display-4"><span class="badge badge-secondary">30</span></h1>
+        <h2>SEP</h2>
       </div>
       <div class="col-10">
-        <h3 class="text-uppercase"><strong>Operations Meeting</strong></h3>
+        <h3 class="text-uppercase"><strong>Santuario el cañi</strong></h3>
         <ul class="list-inline">
-          <img src="../img/Hiker.png" style="height: 20px; background-color:#9A5E21;"></li>
+          <img src="../img/Hiker.png" style="height: 20px; background-color:#9A5E21;"></li>Trekking
             <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
-          <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 9:30 PM - 8:00 PM</li>
+          <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Pucon</li>
         </ul>
         <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <button type="submit" class="btn btn-secondary btn-lg" onclick="testAPI(4);"> Reserva tu lugar</button><span>  <b>(8/12) Cupos disponibles</b></span>
       </div>
     </div>
+  </div>
+
+
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+<br>
+<br>
+
+
+
+
+
+<div id="formcontainer" class="container-fluid">
+    <div class="display-1 text-center">Reserva tu lugar</div>
+
+<br>
+<br>
+<br>
+<form class="needs-validation" novalidate>
+
+
+
+    <div class="form-row">
+        <div class="mb-3 col-md-6">
+            <div class="input-group">
+    <select id="cmb_evento" class="custom-select" required  onchange="itemSelected()">
+      <option disabled selected value>-- Selecciona un Evento... ---</option>
+        <option value="1">RESERVA CORRALCO</option>
+        <option value="2">PARQUE NAC. VILLARRICA</option>
+        <option value="3">LASTARRIA BIKE PARK</option>
+        <option value="4">SANTUARIO EL CAÑI</option>
+        <option value="5">RESERVA HUILO HUILO</option>
+    </select>  <div class="input-group-addon input-group-button ">
+                      <a id="id-escondeme" class="btn btn-secondary" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample" style="display: none;" onclick="deselecBtn()">
+             <span><b>X</b></span>
+            </a>
+    </div>
+    <div class="invalid-feedback">Selecciona evento a reservar</div>
+  </div>
+   </div>
+    </div>
+
+
+
+
+    <div class="form-row">
+      <div class="col-md-4">
+          <div class="input-group">
+       <div class="input-group-prepend">
+        <span class="input-group-text" id="telValidado">Fecha</span>
+
+      </div>
+      <input 
+      id="txtFecha"type="text" class="col-md-5 form-control " aria-describedby="validatedInputGroupPrepend" placeholder="DD/MM" required readonly>
+
+    </div><small class="mb-3 col-md-6"></small></div>
+
+  <div class="mb-3 col-md-3">
+    <div class="input-group ">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="validatedInputGroupPrepend">Horario</span>
+      </div>
+      <input id="txtHorario" type="text" class="form-control " aria-describedby="validatedInputGroupPrepend" placeholder="HH:mm - HH:mm"readonly required>
+    </div>
+   
+
+  </div>  
+  </div> 
+
+    
+
+
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01"  required>
+      <div class="valid-feedback">
+        Ingreso correcto
+      </div>
+       <div class="invalid-feedback">
+        Campo obligatorio, favor ingrese su nombre.
+      </div>
+    </div>
+
+     <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Apellido</label>
+      <input type="text" class="form-control" id="validationCustom02"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-feedback">
+        Campo obligatorio, ingresa tu apellido.
+      </div>
+    </div>
+
+</div>
+<div class="form-row">
+       
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Direccion</label>
+      <input type="text" class="form-control" id="validationCustom01"  required>
+      <div class="valid-feedback">
+        Ingreso correcto
+      </div>
+       <div class="invalid-feedback">
+        Campo obligatorio, favor ingresa tu direccion
+      </div>
+    </div>
+   
+    <div class="col-md-5 mb-3">
+      <label for="validationCustom01">Comuna</label>
+      <input type="text" class="form-control" id="validationCustom01" required>
+      <div class="valid-feedback">
+        Ingreso correcto
+      </div>
+       <div class="invalid-feedback">
+        Campo obligatorio, indique comuna.
+      </div>
+    </div>
+   
+    </div>
+
+<div class="form-row">
+
+ <div class="col-md-4 mb-3">
+      <label for="validationServerUsername">Telefono</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend3">+56</span>
+        </div>
+        <input type="" class="form-control " id="validationServerUsername" placeholder="9 XXXX XXXX" aria-describedby="inputGroupPrepend3" pattern="^(\d{9})$" required>
+        <div class="invalid-feedback">
+          Debe ingresar un numero de contacto. 9 digitos
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    
+    </div>
+    
+
+
+    
+    <label for="radio-eq">Equipamiento:</label>
+
+   
+  <div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+    <label class="custom-control-label" for="customControlValidation2">Cuento con equipamiento</label>
+  </div>
+  <div class="custom-control custom-radio mb-3">
+    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+    <label class="custom-control-label" for="customControlValidation3">Necesito arrendar equipos</label>
+    <div class="invalid-feedback">Debe seleccionar una opción</div>
+  </div>
+
+
+  <button class="btn btn-dark" type="submit">Reservar</button>
+
+
+</form>
+
+
   </div>
   
 
 
+<!-- SECOND FORM -->
+
+</div>  
+
+<script>
+// Validacion de formulario
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+<br>
+<hr>
 
 
 
 
 
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>    
+
+
+
+
+
+<script type="text/javascript" src="../js/main.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -134,3 +352,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
+
